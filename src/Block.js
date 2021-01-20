@@ -4,13 +4,15 @@ export default class Block extends Component {
     test = ()=>{
         console.log("Bonjour");
     }
-
+    testA = (e)=>{
+        console.log(e.target);
+    }
     state = {
         block:[
             {
                 id:1,
                 nom:"event 1",
-                fct:this.test,
+                fct:this.testA,
                 type:'onMouseOver'
 
             },
